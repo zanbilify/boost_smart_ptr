@@ -1,0 +1,20 @@
+[package]
+name = "boost_smart_ptr"
+description = "Boost C++ library boost_smart_ptr packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_smart_ptr"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_smart_ptr"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
